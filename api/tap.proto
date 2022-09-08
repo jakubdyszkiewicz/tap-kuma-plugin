@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package kuma.plugins.policies;
+
+option go_package = "github.com/jakubdyszkiewicz/tap-kuma-plugin/api";
+
+import "mesh/v1alpha1/selector.proto";
+
+message Tap {
+
+  repeated kuma.mesh.v1alpha1.Selector selectors = 1;
+
+  message Conf {
+    string id = 1;
+  }
+
+  Conf conf = 3;
+}

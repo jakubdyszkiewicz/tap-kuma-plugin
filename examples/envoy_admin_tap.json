@@ -1,0 +1,15 @@
+{
+  "config_id": "test_config_id",
+  "tap_config": {
+    "match_config": {
+      "any_match": true
+    },
+    "output_config": {
+      "sinks": [
+        {
+          "streaming_admin": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+apiVersion: kuma.io/v1alpha1
+kind: Tap
+mesh: default
+metadata:
+  name: my-tap
+spec:
+  selectors:
+    - match:
+        kuma.io/service: 'demo-app_kuma-demo_svc_5000'
+  conf:
+    id: test_config_id
